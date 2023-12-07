@@ -2,7 +2,12 @@ import { Icon } from '@/components/icon';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+    title: 'About / Safoto',
+};
 
 export default function About() {
     return (

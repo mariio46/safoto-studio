@@ -1,15 +1,9 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import type { Route } from 'next';
-import Link, { LinkProps } from 'next/link';
+import { NavLinkType } from '@/types';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
-interface NavLinkType extends LinkProps {
-    href: Route | URL;
-    className?: string;
-    children: React.ReactNode;
-}
 
 export default function NavigationLink({ href, className, children, ...props }: NavLinkType) {
     const pathname: string = usePathname();
