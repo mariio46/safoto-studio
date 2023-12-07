@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <div className='h-[1000rem] p-5'>
             <h1 className='text-3xl font-bold text-foreground hover:text-primary'>Hey, Kami Safoto 👋</h1>
-            <p className='my-8 max-w-4xl tracking-wide text-muted-foreground '>
+            <p className='my-10 max-w-4xl tracking-wide text-muted-foreground '>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni magnam tempora voluptates illum
                 voluptatibus. Illo neque animi reprehenderit, sed consectetur maxime! Laborum nam totam iure, aliquid
                 repellat tempora officia! Et, corrupti unde eos modi porro, dolores delectus est nemo repellendus cum
@@ -12,7 +12,7 @@ export default function Home() {
                 Impedit, reprehenderit vel eveniet voluptatibus provident eum saepe aperiam magni ducimus tenetur
                 suscipit ratione, incidunt modi pariatur voluptatem dolorem.
             </p>
-            <div className=' grid grid-cols-1 gap-10 md:grid-cols-3'>
+            <div className=' grid grid-cols-1 gap-10 sm:grid-cols-3'>
                 <div className='grid grid-cols-1 gap-10'>
                     <Image
                         loading='eager'
