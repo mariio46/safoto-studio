@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
     return (
         <div className='h-[1000rem] p-5'>
@@ -12,39 +14,57 @@ export default function Home() {
             </p>
             <div className=' grid grid-cols-1 gap-10 md:grid-cols-3'>
                 <div className='grid grid-cols-1 gap-10'>
-                    <img
-                        src='https://leerob.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsummit.52edaff7.jpg&w=640&q=75'
-                        className='h-40 w-full rounded-lg border border-muted-foreground/40 object-cover'
-                        alt='Hello 1'
-                    />
-                    <img
-                        src='https://leerob.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffilming.bffde3c3.jpg&w=640&q=75'
+                    <Image
+                        loading='eager'
+                        src='/images/home-5.jpg'
+                        alt='home-5'
+                        width={640}
+                        height={440}
                         className='h-full w-full rounded-lg border border-muted-foreground/40 object-cover'
-                        alt='Hello 1'
                     />
-                </div>
-                <div className='grid grid-cols-1 gap-10'>
-                    <img
-                        src='https://leerob.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Freactathon.30f4081b.jpg&w=640&q=75'
+                    <Image
+                        loading='eager'
+                        src='/images/home-7.jpg'
+                        alt='home-7'
+                        width={600}
+                        height={900}
                         className='h-full w-full rounded-lg border border-muted-foreground/40 object-cover'
-                        alt='hello 2'
-                    />
-                    <img
-                        src='https://leerob.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsmashing.462a25b7.jpg&w=640&q=75'
-                        className='h-full w-full rounded-lg border border-muted-foreground/40 object-cover'
-                        alt='hello 2'
                     />
                 </div>
                 <div className='grid grid-cols-1 gap-10'>
-                    <img
-                        src='https://leerob.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fship.0e202908.jpg&w=640&q=75'
+                    <Image
+                        loading='eager'
+                        src='/images/home-2.jpg'
+                        alt='home-2'
+                        width={600}
+                        height={900}
                         className='h-full w-full rounded-lg border border-muted-foreground/40 object-cover'
-                        alt='hello 3'
                     />
-                    <img
-                        src='https://leerob.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmeetups.3bb2b521.jpg&w=256&q=75'
+                    <Image
+                        loading='eager'
+                        src='/images/home-3.jpg'
+                        alt='home-3'
+                        width={640}
+                        height={440}
                         className='h-full w-full rounded-lg border border-muted-foreground/40 object-cover'
-                        alt='hello 3'
+                    />
+                </div>
+                <div className='grid grid-cols-1 gap-10'>
+                    <Image
+                        loading='eager'
+                        src='/images/home-6.jpg'
+                        alt='home-6'
+                        width={640}
+                        height={440}
+                        className='h-full w-full rounded-lg border border-muted-foreground/40 object-cover'
+                    />
+                    <Image
+                        loading='eager'
+                        src='/images/home-4.jpg'
+                        alt='home-4'
+                        width={600}
+                        height={900}
+                        className='h-full w-full rounded-lg border border-muted-foreground/40 object-cover'
                     />
                 </div>
             </div>
