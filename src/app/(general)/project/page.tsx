@@ -7,3 +7,11 @@ export const metadata: Metadata = {
 export default function Project() {
     return <div>Project</div>;
 }
+
+// Project Category: {
+// Wedding
+// Profile Company
+// Video Dokumentasi
+// Foto Product
+// Foto Studio
+// }

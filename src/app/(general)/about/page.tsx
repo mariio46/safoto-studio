@@ -16,10 +16,11 @@ export default function About() {
                 <div className='col-auto'>
                     <h2 className='text-xl font-bold text-foreground lg:text-2xl'>Sejak 2020</h2>
                     <p className='mt-5 text-sm tracking-wide text-muted-foreground'>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum numquam maiores nulla molestias a
-                        sit dolore aliquid, quos asperiores! Aliquam corporis atque esse nihil praesentium totam itaque
-                        unde rerum. Optio, doloribus. Et nisi, qui modi hic, aliquid fugiat adipisci facilis doloribus
-                        mollitia voluptatem, id optio itaque quas deserunt consequatur quasi.
+                        Kami telah berkomitmen menjadi penyedia jasa fotografi dan videografi terkemuka di
+                        seajatappareng, dengan komitmen kuat untuk menciptakan pengalaman yang unik dan eksklusif di
+                        setiap momen. Melalui konsep baru, kreativitas, dan dedikasi terhadap keunggulan, kami berupaya
+                        memberikan layanan yang membedakan diri, menjaga profesionalitas dalam setiap aspek, serta terus
+                        berinovasi untuk memenuhi harapan klien.
                     </p>
                 </div>
                 <div className='col-auto'>
@@ -52,10 +53,10 @@ export default function About() {
                 <div className='order-first col-auto md:order-last'>
                     <h2 className='text-xl font-bold text-foreground lg:text-2xl'>Misi kami</h2>
                     <p className='mt-5 text-sm tracking-wide text-muted-foreground'>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum numquam maiores nulla molestias a
-                        sit dolore aliquid, quos asperiores! Aliquam corporis atque esse nihil praesentium totam itaque
-                        unde rerum. Optio, doloribus. Et nisi, qui modi hic, aliquid fugiat adipisci facilis doloribus
-                        mollitia voluptatem, id optio itaque quas deserunt consequatur quasi.
+                        Misi kami adalah memberikan pengalaman unik dan eksklusif di setiap momen melalui konsep baru,
+                        pelayanan profesional, solusi terbaik, hasil printing dan finishing terjaga, serta membangun
+                        hubungan yang kuat dengan klien berdasarkan kepercayaan. Kami berkomitmen untuk memberikan
+                        penawaran, kerjasama, ide, harga, dan kualitas terbaik demi kepuasan dan kepercayaan klien.
                     </p>
                 </div>
             </div>

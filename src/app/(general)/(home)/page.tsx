@@ -12,7 +12,7 @@ export default function Home() {
                 Impedit, reprehenderit vel eveniet voluptatibus provident eum saepe aperiam magni ducimus tenetur
                 suscipit ratione, incidunt modi pariatur voluptatem dolorem.
             </p>
-            <div className=' grid grid-cols-1 gap-10 sm:grid-cols-3'>
+            <div className='grid grid-cols-2 gap-10 sm:grid-cols-4'>
                 <div className='grid grid-cols-1 gap-10'>
                     <Image
                         loading='eager'
@@ -64,6 +64,24 @@ export default function Home() {
                         alt='home-4'
                         width={600}
                         height={900}
+                        className='h-full w-full rounded-lg border border-muted-foreground/40 object-cover'
+                    />
+                </div>
+                <div className='grid grid-cols-1 gap-10'>
+                    <Image
+                        loading='eager'
+                        src='/images/home-7.jpg'
+                        alt='home-7'
+                        width={600}
+                        height={900}
+                        className='h-full w-full rounded-lg border border-muted-foreground/40 object-cover'
+                    />
+                    <Image
+                        loading='eager'
+                        src='/images/home-5.jpg'
+                        alt='home-5'
+                        width={640}
+                        height={440}
                         className='h-full w-full rounded-lg border border-muted-foreground/40 object-cover'
                     />
                 </div>
