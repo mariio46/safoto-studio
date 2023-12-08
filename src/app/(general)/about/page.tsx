@@ -1,3 +1,4 @@
+import { SecondaryHeading } from '@/components/headings';
 import { Icon } from '@/components/icon';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Card } from '@/components/ui/card';
@@ -14,8 +15,8 @@ export default function About() {
         <div className='p-5'>
             <div className='grid grid-cols-1 content-center items-center gap-10 md:grid-cols-2'>
                 <div className='col-auto'>
-                    <h2 className='text-xl font-bold text-foreground lg:text-2xl'>Sejak 2020</h2>
-                    <p className='mt-5 text-sm tracking-wide text-muted-foreground'>
+                    <SecondaryHeading>Sejak 2020</SecondaryHeading>
+                    <p className='mt-5 text-[0.900rem]/[1.35rem] leading-relaxed tracking-wide text-primary/70'>
                         Kami telah berkomitmen menjadi penyedia jasa fotografi dan videografi terkemuka di
                         seajatappareng, dengan komitmen kuat untuk menciptakan pengalaman yang unik dan eksklusif di
                         setiap momen. Melalui konsep baru, kreativitas, dan dedikasi terhadap keunggulan, kami berupaya
@@ -51,8 +52,8 @@ export default function About() {
                     </AspectRatio>
                 </div>
                 <div className='order-first col-auto md:order-last'>
-                    <h2 className='text-xl font-bold text-foreground lg:text-2xl'>Misi kami</h2>
-                    <p className='mt-5 text-sm tracking-wide text-muted-foreground'>
+                    <SecondaryHeading>Misi kami</SecondaryHeading>
+                    <p className='mt-5 text-[0.900rem]/[1.35rem] leading-relaxed tracking-wide text-primary/70'>
                         Misi kami adalah memberikan pengalaman unik dan eksklusif di setiap momen melalui konsep baru,
                         pelayanan profesional, solusi terbaik, hasil printing dan finishing terjaga, serta membangun
                         hubungan yang kuat dengan klien berdasarkan kepercayaan. Kami berkomitmen untuk memberikan

@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import ApplicationLogo from './application-logo';
 import NavigationLink from './navigation-link';
-import { Button } from './ui/button';
+import { Button, buttonVariants } from './ui/button';
 import { Separator } from './ui/separator';
-import AppLogo from './app-logo';
+import ApplicationLogo from './application-logo';
+import { Icon } from './icon';
+import { BlankLink } from './blank-link';
 
 export default function Navigation() {
     return (
@@ -13,7 +14,7 @@ export default function Navigation() {
                     <nav className='flex items-center justify-between gap-x-5'>
                         <div className='flex items-center gap-x-2'>
                             <Link href={'/'} className='outline-none'>
-                                <AppLogo className='h-7 w-28' />
+                                <ApplicationLogo className='h-7 w-28' />
                             </Link>
                             <Separator
                                 orientation='vertical'
@@ -26,7 +27,14 @@ export default function Navigation() {
                             </div>
                         </div>
                         <div>
-                            <Button className='rounded-full'>Collab Now</Button>
+                            <BlankLink
+                                href='https://wa.me/6287844785099'
+                                className={buttonVariants({
+                                    variant: 'default',
+                                    className: 'rounded-full font-semibold',
+                                })}>
+                                Collab N<Icon name='IconCamera' className='mt-0.5 h-3 w-3 stroke-[1.5]' />w
+                            </BlankLink>
                         </div>
                     </nav>
                 </div>

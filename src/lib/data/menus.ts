@@ -15,11 +15,11 @@ export const menus = [
     {
         name: 'about',
         url: '/about',
-        icon: 'IconUserSearch',
+        icon: 'IconInfoCircle',
     },
     {
         name: 'project',
         url: '/project',
-        icon: 'IconDeviceLaptop',
+        icon: 'IconCamera',
     },
 ] satisfies MenuType[];

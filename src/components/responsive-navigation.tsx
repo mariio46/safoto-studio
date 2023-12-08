@@ -9,9 +9,10 @@ import { menus } from '@/lib/data/menus';
 import { cn } from '@/lib/utils';
 import { NavLinkType } from '@/types';
 import Link from 'next/link';
-import AppLogo from './app-logo';
 import { Icon } from './icon';
-import { Button } from './ui/button';
+import { Button, buttonVariants } from './ui/button';
+import ApplicationLogo from './application-logo';
+import { BlankLink } from './blank-link';
 
 function ResposiveNavigationLink({ className, children, href, ...props }: NavLinkType) {
     return (
@@ -30,7 +31,7 @@ export default function ResponsiveNavigation() {
             <div className='fixed left-1/2 top-5 w-full -translate-x-1/2 px-4'>
                 <nav className='flex items-center justify-between rounded-full border border-muted-foreground/20 bg-background p-2 backdrop-blur-sm'>
                     <div>
-                        <AppLogo className='h-7 w-28' />
+                        <ApplicationLogo className='h-7 w-28' />
                     </div>
                     <div className='flex items-center gap-x-2'>
                         <DropdownMenu>
@@ -50,9 +51,14 @@ export default function ResponsiveNavigation() {
                                 ))}
                                 <DropdownMenuSeparator />
                                 <DropdownMenuItem asChild>
-                                    <Button size={'sm'} className='w-full text-sm'>
-                                        Collab Now
-                                    </Button>
+                                    <BlankLink
+                                        className={buttonVariants({
+                                            variant: 'default',
+                                            size: 'sm',
+                                            className: 'w-full text-sm font-semibold',
+                                        })}>
+                                        Collab N<Icon name='IconCamera' className='mt-0.5 h-3 w-3 stroke-[1.5]' />w
+                                    </BlankLink>
                                 </DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>

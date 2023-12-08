@@ -7,7 +7,7 @@ export default function Layout({ children }: Children) {
         <>
             <ResponsiveNavigation />
             <Navigation />
-            <main className='mx-auto mt-20 max-w-5xl sm:mt-40'>{children}</main>
+            <main className='mx-auto my-20 max-w-5xl sm:my-40'>{children}</main>
         </>
     );
 }
