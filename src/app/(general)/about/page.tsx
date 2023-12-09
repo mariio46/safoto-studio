@@ -1,5 +1,6 @@
 import { SecondaryHeading } from '@/components/headings';
 import { Icon } from '@/components/icon';
+import ProfileCard from '@/components/profile-card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -64,103 +65,34 @@ export default function About() {
             <Separator className='my-10 md:my-20' />
             <div>
                 <h2 className='text-center text-2xl font-bold text-foreground'>Tim Terbaik Kami</h2>
-                <div className='mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3'>
-                    <Card className='mx-auto max-w-xs'>
-                        <div className='p-3'>
-                            <Image
-                                src={'/images/team-4.jpg'}
-                                alt='Team 4'
-                                width={2000}
-                                height={1408}
-                                className='aspect-square h-full w-full rounded-lg border object-cover lg:h-[315px] lg:w-[315px]'
-                            />
-                            <div className='mt-3 '>
-                                <h4 className='text-lg font-medium'>Asdar Amiruddin</h4>
-                                <p className='text-sm text-muted-foreground'>Fotografer</p>
-                            </div>
-                            <div className='mt-2 flex items-center gap-x-2'>
-                                <a
-                                    href='https://www.instagram.com/asdarkao_/'
-                                    target='_blank'
-                                    rel='noopener noreferrer'>
-                                    <Icon
-                                        name='IconBrandInstagram'
-                                        className='text-muted-foreground hover:text-foreground'
-                                    />
-                                </a>
-                                <a
-                                    href='https://www.instagram.com/asdarkao_/'
-                                    target='_blank'
-                                    rel='noopener noreferrer'>
-                                    <Icon name='IconBrandX' className='text-muted-foreground hover:text-foreground' />
-                                </a>
-                            </div>
-                        </div>
-                    </Card>
-                    <Card className='mx-auto max-w-xs'>
-                        <div className='p-3'>
-                            <Image
-                                src={'/images/team-4.jpg'}
-                                alt='Team 4'
-                                width={2000}
-                                height={1408}
-                                className='aspect-square h-full w-full rounded-lg border object-cover lg:h-[315px] lg:w-[315px]'
-                            />
-                            <div className='mt-3 '>
-                                <h4 className='text-lg font-medium'>Asdar Amiruddin</h4>
-                                <p className='text-sm text-muted-foreground'>Fotografer</p>
-                            </div>
-                            <div className='mt-2 flex items-center gap-x-2'>
-                                <a
-                                    href='https://www.instagram.com/asdarkao_/'
-                                    target='_blank'
-                                    rel='noopener noreferrer'>
-                                    <Icon
-                                        name='IconBrandInstagram'
-                                        className='text-muted-foreground hover:text-foreground'
-                                    />
-                                </a>
-                                <a
-                                    href='https://www.instagram.com/asdarkao_/'
-                                    target='_blank'
-                                    rel='noopener noreferrer'>
-                                    <Icon name='IconBrandX' className='text-muted-foreground hover:text-foreground' />
-                                </a>
-                            </div>
-                        </div>
-                    </Card>
-                    <Card className='mx-auto max-w-xs'>
-                        <div className='p-3'>
-                            <Image
-                                src={'/images/team-4.jpg'}
-                                alt='Team 4'
-                                width={2000}
-                                height={1408}
-                                className='aspect-square h-full w-full rounded-lg border object-cover lg:h-[315px] lg:w-[315px]'
-                            />
-                            <div className='mt-3 '>
-                                <h4 className='text-lg font-medium'>Asdar Amiruddin</h4>
-                                <p className='text-sm text-muted-foreground'>Fotografer</p>
-                            </div>
-                            <div className='mt-2 flex items-center gap-x-2'>
-                                <a
-                                    href='https://www.instagram.com/asdarkao_/'
-                                    target='_blank'
-                                    rel='noopener noreferrer'>
-                                    <Icon
-                                        name='IconBrandInstagram'
-                                        className='text-muted-foreground hover:text-foreground'
-                                    />
-                                </a>
-                                <a
-                                    href='https://www.instagram.com/asdarkao_/'
-                                    target='_blank'
-                                    rel='noopener noreferrer'>
-                                    <Icon name='IconBrandX' className='text-muted-foreground hover:text-foreground' />
-                                </a>
-                            </div>
-                        </div>
-                    </Card>
+                <div className='mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3'>
+                    <ProfileCard
+                        name='Asdarkaoo'
+                        occupation='Owner'
+                        image_path='/images/team-4.jpg'
+                        instagram='asdarkaoo'
+                        facebook='asdarkaoo'
+                        twitter={null}
+                        whatsapp='asdarkaoo'
+                    />
+                    <ProfileCard
+                        name='Asdarkaoo'
+                        occupation='Owner'
+                        image_path='/images/team-4.jpg'
+                        instagram='asdarkaoo'
+                        facebook='asdarkaoo'
+                        twitter='asdarkaoo'
+                        whatsapp='asdarkaoo'
+                    />
+                    <ProfileCard
+                        name='Asdarkaoo'
+                        occupation='Owner'
+                        image_path='/images/team-4.jpg'
+                        instagram='asdarkaoo'
+                        facebook='asdarkaoo'
+                        twitter='asdarkaoo'
+                        whatsapp='asdarkaoo'
+                    />
                 </div>
             </div>
         </div>

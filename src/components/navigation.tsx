@@ -33,7 +33,8 @@ export default function Navigation() {
                                     variant: 'default',
                                     className: 'rounded-full font-semibold',
                                 })}>
-                                Collab N<Icon name='IconCamera' className='mt-0.5 h-3 w-3 stroke-[1.5]' />w
+                                {/* Collab N<Icon name='IconCamera' className='mt-0.5 h-3 w-3 stroke-[1.5]' />w */}
+                                Hire us
                             </BlankLink>
                         </div>
                     </nav>

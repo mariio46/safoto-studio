@@ -57,7 +57,8 @@ export default function ResponsiveNavigation() {
                                             size: 'sm',
                                             className: 'w-full text-sm font-semibold',
                                         })}>
-                                        Collab N<Icon name='IconCamera' className='mt-0.5 h-3 w-3 stroke-[1.5]' />w
+                                        {/* Collab N<Icon name='IconCamera' className='mt-0.5 h-3 w-3 stroke-[1.5]' />w */}
+                                        Hire us
                                     </BlankLink>
                                 </DropdownMenuItem>
                             </DropdownMenuContent>
