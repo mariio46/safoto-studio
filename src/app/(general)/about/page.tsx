@@ -163,7 +163,6 @@ export default function About() {
                     </Card>
                 </div>
             </div>
-            <Separator className='my-10 md:my-20' />
         </div>
     );
 }

@@ -1,3 +1,6 @@
+import { BlankLink } from '@/components/blank-link';
+import { PrimaryHeading, SecondaryHeading } from '@/components/headings';
+import { Icon } from '@/components/icon';
 import {
     Project,
     ProjectBLock,
@@ -11,16 +14,16 @@ import {
     ProjectBlockRedirect,
     ProjectTemplate,
 } from '@/components/project-template';
-import { BlankLink } from '@/components/blank-link';
-import { PrimaryHeading, SecondaryHeading } from '@/components/headings';
-import { Icon } from '@/components/icon';
-import Image from 'next/image';
-import ProjectPage from '../project/page';
+import { buttonVariants } from '@/components/ui/button';
 import { HomeCollections } from '@/lib/data/projects';
+import { socials } from '@/lib/data/socials';
+import { cn } from '@/lib/utils';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
     return (
-        <div className='p-5'>
+        <div className='relative p-5'>
             <section id='home'>
                 <PrimaryHeading>Hey, Kami Safoto 👋</PrimaryHeading>
                 <p className='my-10 max-w-4xl text-[0.900rem]/[1.35rem] leading-relaxed tracking-wide text-primary/70 lg:text-[1.063rem]'>
@@ -154,31 +157,40 @@ export default function Home() {
                         </Project>
                     ))}
                 </ProjectTemplate>
+                <div className='flex items-center justify-end'>
+                    <Link
+                        href={'/project'}
+                        className={cn(
+                            buttonVariants({
+                                variant: 'outline',
+                            }),
+                            'group inline-flex items-center gap-x-2 rounded-full',
+                        )}>
+                        Lihat project lainnya
+                        <Icon
+                            name='IconArrowNarrowRight'
+                            className='transition-transform duration-300 group-hover:-rotate-12'
+                        />
+                    </Link>
+                </div>
             </section>
 
             <section id='find-us'>
                 <SecondaryHeading className='mt-20'>Temukan Kami</SecondaryHeading>
-                <div>
-                    <div className='my-8 flex w-full flex-row space-x-2 overflow-x-auto'>
+                <div className='mt-5 flex flex-wrap items-center justify-center gap-4 sm:justify-start'>
+                    {socials.map((item, i) => (
                         <BlankLink
-                            href='#'
-                            className='flex items-center justify-between gap-x-2 rounded border bg-secondary px-3 py-4 text-base font-semibold text-foreground/70 hover:bg-secondary/80 hover:text-green-500'>
-                            <Icon name='IconBrandWhatsapp' className='h-6 w-6 stroke-[1.8]' />
-                            Whatsapp
+                            key={i}
+                            href={item.url}
+                            className={cn(
+                                buttonVariants({ variant: 'secondary' }),
+                                'inline-flex h-12 w-40 justify-center gap-x-2 px-6 py-2',
+                                item.color,
+                            )}>
+                            <Icon name={item.icon} className='h-6 w-6 stroke-[1.8]' />
+                            {item.name}
                         </BlankLink>
-                        <BlankLink
-                            href='#'
-                            className='flex items-center justify-between gap-x-2 rounded border bg-secondary px-3 py-4 text-base font-semibold text-foreground/70 hover:bg-secondary/80 hover:text-pink-500'>
-                            <Icon name='IconBrandInstagram' className='h-6 w-6 stroke-[1.8]' />
-                            Instagram
-                        </BlankLink>
-                        <BlankLink
-                            href='#'
-                            className='flex items-center justify-between gap-x-2 rounded border bg-secondary px-3 py-4 text-base font-semibold text-foreground/70 hover:bg-secondary/80 hover:text-blue-500'>
-                            <Icon name='IconMapPin' className='h-6 w-6 stroke-[1.8]' />
-                            Studio
-                        </BlankLink>
-                    </div>
+                    ))}
                 </div>
             </section>
         </div>

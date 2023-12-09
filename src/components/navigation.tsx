@@ -10,7 +10,7 @@ export default function Navigation() {
     return (
         <header className='relative z-10 hidden sm:block'>
             <div className='fixed left-1/2 top-10 w-full max-w-2xl -translate-x-1/2'>
-                <div className='rounded-full border border-muted-foreground/50 bg-transparent px-2 py-1.5 backdrop-blur-sm'>
+                <div className='rounded-full border border-muted-foreground/50 bg-background px-2 py-1.5'>
                     <nav className='flex items-center justify-between gap-x-5'>
                         <div className='flex items-center gap-x-2'>
                             <Link href={'/'} className='outline-none'>

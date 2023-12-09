@@ -30,9 +30,9 @@ export default function ResponsiveNavigation() {
         <header className='relative z-40 block sm:hidden'>
             <div className='fixed left-1/2 top-5 w-full -translate-x-1/2 px-4'>
                 <nav className='flex items-center justify-between rounded-full border border-muted-foreground/20 bg-background p-2 backdrop-blur-sm'>
-                    <div>
+                    <Link href={'/'}>
                         <ApplicationLogo className='h-7 w-28' />
-                    </div>
+                    </Link>
                     <div className='flex items-center gap-x-2'>
                         <DropdownMenu>
                             <DropdownMenuTrigger className='grid place-content-center rounded-full border border-border bg-secondary p-2'>
